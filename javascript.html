@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAth Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header>
+        <img src="" alt="not show">
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Welcome">
+            <h2>Welcome to university</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ducimus laudantium</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ducimus laudantium</p>
+            <a href="" class="Button">Learn More</a>
+        </section>
+        <section id="programs">
+            <h2>Our Programs</h2>
+            <ul>
+                <li>pasasfkasf</li>
+                <li>asjbfjksbfks</li>
+                <li>sbafmbasjkfbsjad</li>
+            </ul>
+        </section>
+        <section id="facilities">
+            <h2>Our facilities</h2>
+            <ul>
+                <li>pasasfkasf</li>
+                <li>asjbfjksbfks</li>
+                <li>sbafmbasjkfbsjad</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Paf-kiet university &copy;</p>
+    </footer> -->
+
+     <!-- Math Operation -->
+     <h1>Math Operation</h1>
+     <label for="num1">Number 1:</label>
+     <input type="number" id="num1"><br><br>
+     <label for="num2">Number 2:</label>
+     <input type="number" id="num2"><br><br>
+     <button onclick="addNumbers()">Addition</button>
+     <button onclick="subtractNumbers()">Subtraction</button>
+     <button onclick="multiplyNumbers()">Multiply</button>
+     <button onclick="divideNumbers()">Division</button><br><br>
+     <button onclick="showAlert()">Show Alert</button>
+     <button onclick="showConfirm()">Show Confirm</button>
+     <button onclick="showPrompt()">Show Prompt</button>
+
+     <script>
+        function showAlert(){
+            alert("This is an alert box!")
+        }
+        function showConfirm(){
+            var result = confirm("This is a confirmation Box! Do you want to proceed?");
+            if(result) {
+                alert("You Clicked Ok!");
+            }
+            else {
+                alert("You Clicked Cancel!")
+            }
+        }
+        function showPrompt(){
+           var name = prompt("Please enter your name:" ,"Ali Kasbati");
+           if(name){
+            alert("Hello,"+name+"!");
+           }
+           else{
+            alert ("Hello,stranger!");
+           }
+        }
+        function addNumbers(){
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let result = num1 + num2;
+            alert("the result of addition is:"+ result);
+        }
+        function subtractNumbers(){
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let result = num1 - num2;
+            alert("the result of subtraction is:"+ result);
+        }
+        function multiplyNumbers(){
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value)
+            let result = num1 * num2;
+            alert("the result of multiplication is:"+result);
+        }
+        function divideNumbers(){
+            let num1 = parseInt(document.getElementById("num1").value)
+            let num2 = parseInt(document.getElementById("num2").value)
+            let result = num1 / num2;
+            alert("the result of division is:"+result);
+        }
+     </script>
+</body>
+</html>
